@@ -18,6 +18,8 @@ import FlexScreen from './src/screens/FlexScreen';
 import RealHomeScreen from './src/screens/real_case/RealHomeScreen';
 import PostDetailScreen from './src/screens/real_case/PostDetailScreen';
 import HookTesterScreen from './src/screens/HooksTesterScreen';
+import HomeDemoScreen from './src/screens/auth_case/HomeDemoScreen';
+import LoginScreen from './src/screens/auth_case/LoginScreen';
 
 const Stack = createNativeStackNavigator()
 
@@ -34,6 +36,8 @@ function App(): JSX.Element {
           <Stack.Screen name='RealHome' component={RealHomeScreen} />
           <Stack.Screen name='PostDetail' component={PostDetailScreen} />
           <Stack.Screen name='Hooks' component={HookTesterScreen} />
+          <Stack.Screen name='HomeDemo' component={HomeDemoScreen} /> 
+          <Stack.Screen name='Login' component={LoginScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     </ReduxsProvider>

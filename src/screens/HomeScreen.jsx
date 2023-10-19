@@ -19,6 +19,9 @@ export default function HomeScreen({ navigation }) {
             <Button title="Go to Hooks Screen" onPress={() => {
                 navigation.push("Hooks")
             }} />
+            <Button title="Go to Auth Screen" onPress={() => {
+                navigation.push("Login")
+            }} />
         </View>
     )
 }
