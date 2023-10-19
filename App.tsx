@@ -18,28 +18,18 @@ import FlexScreen from './src/screens/FlexScreen';
 import RealHomeScreen from './src/screens/real_case/RealHomeScreen';
 import PostDetailScreen from './src/screens/real_case/PostDetailScreen';
 import HookTesterScreen from './src/screens/HooksTesterScreen';
-import HomeDemoScreen from './src/screens/auth_case/HomeDemoScreen';
+// import HomeDemoScreen from './src/screens/auth_case/HomeDemoScreen';
 import LoginScreen from './src/screens/auth_case/LoginScreen';
+import { useSelector } from 'react-redux';
+import AppNavigation from './src/navigations/AppNav';
 
 const Stack = createNativeStackNavigator()
 
 function App(): JSX.Element {
+  
   return (
     <ReduxsProvider>
-      <NavigationContainer>
-        <Stack.Navigator>
-          <Stack.Screen name='Home' component={HomeScreen} />
-          <Stack.Screen name='Counter' component={CounterScreen} />
-          <Stack.Screen name='Veryfier' component={VeryfierScreen} />
-          <Stack.Screen name='Styling' component={StylingScreen} />
-          <Stack.Screen name='Flex' component={FlexScreen} />
-          <Stack.Screen name='RealHome' component={RealHomeScreen} />
-          <Stack.Screen name='PostDetail' component={PostDetailScreen} />
-          <Stack.Screen name='Hooks' component={HookTesterScreen} />
-          <Stack.Screen name='HomeDemo' component={HomeDemoScreen} /> 
-          <Stack.Screen name='Login' component={LoginScreen} />
-        </Stack.Navigator>
-      </NavigationContainer>
+      <AppNavigation />
     </ReduxsProvider>
   )
 }
