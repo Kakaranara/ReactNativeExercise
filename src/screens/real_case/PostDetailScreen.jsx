@@ -1,7 +1,7 @@
 import { View, StyleSheet, Text, FlatList } from "react-native";
 import IconText from "../../components/real_case/IconText";
 import { useEffect, useState } from "react";
-import { performRequest } from "../../lib/networkProvider";
+import { performRequest } from "../../lib/redux/service/networkProvider";
 import CenterLoading from "../../components/CenterLoading";
 import PostCard from "../../components/real_case/PostCard";
 

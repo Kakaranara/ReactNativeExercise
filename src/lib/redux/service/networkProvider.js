@@ -1,5 +1,5 @@
 import axios from "axios";
-import {DUMMY_BASE_URL} from "./../constants"
+import {DUMMY_BASE_URL} from "../../../constants"
 import { ToastAndroid } from "react-native";
 
 /**

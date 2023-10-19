@@ -11,16 +11,15 @@ export default function HookTesterScreen() {
      */
     const calculationResult = useMemo(() => {
         console.log("Memo got re-rendered!");    
-        extensiveCalculation()
+        return extensiveCalculation()
     }, [memoNum2])
 
     let reRenderSum = useRef(0);
-    console.log(`i got re-rendered ${reRenderSum.current} times!`);
+    console.log(`i got re-rendered ${reRenderSum.current} times! calc: ${calculationResult}`);
 
     useEffect(() => {
         reRenderSum.current += 1
     })
- 
     
     return(
     <View style={styles.container}>

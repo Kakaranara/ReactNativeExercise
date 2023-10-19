@@ -40,4 +40,6 @@ const counterSlice = createSlice({
 })
 
 
-export { counterSlice };
+const counterReducer =  counterSlice.reducer;
+
+export {counterReducer, counterSlice}

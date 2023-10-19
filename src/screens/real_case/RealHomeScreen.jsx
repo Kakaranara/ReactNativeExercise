@@ -2,7 +2,7 @@ import { FlatList, ToastAndroid, View } from "react-native";
 import CenterLoading from "../../components/CenterLoading";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { performRequest } from "../../lib/networkProvider";
+import { performRequest } from "../../lib/redux/service/networkProvider";
 import { delay } from "../../util";
 import _ from "lodash"
 import PostCard from "../../components/real_case/PostCard";
