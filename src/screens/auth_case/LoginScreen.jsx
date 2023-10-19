@@ -3,6 +3,7 @@ import {authSlice, loginThunk} from './../../lib/redux/reducers/authSlice'
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 
+
 export default function LoginScreen({navigation}) {
     
     const authState = useSelector((state) => state.auth)
@@ -17,8 +18,6 @@ export default function LoginScreen({navigation}) {
         }
     })
 
-    
-
     return(
         <View style={{flex:1, justifyContent: "center", alignItems:'center', gap: 12}}>
             <Button title="LOGIN" onPress={() => {
@@ -29,3 +28,11 @@ export default function LoginScreen({navigation}) {
         </View>
     )
 }
+
+// export default function LoginScreen() {
+//     return(
+//         <View style={{flex: 1, justifyContent: 'center', }}>
+
+//         </View>
+//     )
+// }
