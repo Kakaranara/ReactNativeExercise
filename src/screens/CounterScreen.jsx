@@ -2,9 +2,11 @@ import { Button, StyleSheet, Text, TextInput, ToastAndroid, TouchableOpacity, Vi
 import CounterButton from "../components/CounterButton"
 import { useNavigation } from "@react-navigation/native"
 import { useDispatch, useSelector } from "react-redux"
-import { counterSlice } from "./../lib/redux/reducers/counterSlice"
 import { useState } from "react"
+import { counterSlice } from "./../lib/redux/reducers/counterSlice"
 import { testThunk } from "../lib/redux/reducers/thunk"
+
+
 
 export default function CounterScreen() {
     const navigation = useNavigation()
